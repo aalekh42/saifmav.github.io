@@ -33,14 +33,13 @@ const dashbord = () => {
               </Grid>
               <Grid item xs={4} sm={1}>
               <Typography >
-                  {/* Hello,{user.displayName} */}
+                  Hello,{user?.displayName}
                 </Typography>
               </Grid>
               <Grid item xs={2} sm={1}>
                 <Button color="inherit" onClick={logOut}>Logout</Button>
                 
               </Grid>
-              {console.log("logout ",logOut)}
           </Toolbar>
         </AppBar>
         <Grow in>

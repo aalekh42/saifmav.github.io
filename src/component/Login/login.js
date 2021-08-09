@@ -33,11 +33,9 @@ const Login = () => {
   
   useEffect(() => {
     if (user) {
-      console.log("ðŸš€ ~ file: login.js ~ line 36 ~ useEffect ~ user", user)
       //setRedirect('/app')
     }
   }, [user])
- // console.log("ðŸš€ ~ file: login.js ~ line 41 ~ Login ~ redirect", redirect)
   if (user) {
 	  return(
     <Redirect to="./app"/>
