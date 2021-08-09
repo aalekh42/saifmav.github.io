@@ -12,15 +12,16 @@ const dashbord = () => {
     const classes = useStyle()
 
     const user = useContext(UserContext);
-    const [redirect, setredirect] = useState(null);
+    // const [redirect, setredirect] = useState(null);
   
     useEffect(() => {
       if (!user) {
-        setredirect("/login");
+        // setredirect("/login");
       }
     }, [user]);
-    if (redirect) { 
-      <Redirect to={redirect} />;
+    if (!user) { 
+      return(
+      <Redirect to='./' />)
     }
   return (
     <>
